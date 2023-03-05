@@ -1,16 +1,17 @@
 <template>
   <div id="app">
+
     <!-- head part -->
-    <div style="height: 60px;line-height: 60px;background-color: white;margin-bottom: 2px;">
-      <img src="@/assets/logo.png" alt="logo" style="width: 60px;height: 60px;">
-      <span style="margin-left: 10px; font-size: 24px;">XP管理</span>
+    <div style="height: 70px;line-height: 60px;background-color: white;margin-bottom: 2px;">
+      <img src="@/assets/logo.png" alt="logo" style="width: 50px;position: : relative; top: 10px;:left: 20px">
+      <span style="font-size: 24px;">管理 system</span>
     </div>
 
     <!-- left prat and main -->
     <div style="display: flex;">
       <!-- 侧边栏导航 -->
       <div style="width: 200px;min-height: calc(100vh-62px); overflow: hidden;margin-right: 2px;background-color: white;">
-        <el-menu :default-active="$route.path" :default-opends="['/']" router class="el-menu-demo">
+        <el-menu :default-opends="['/']" router class="el-menu-demo">
           <el-menu-item index="/">
             <i class="el-icon-eleme">
               <span>首页</span>
@@ -27,7 +28,7 @@
         </el-menu>
       </div>
       <!-- 主题数据 -->
-      <div style="flex: 1;background-color: white;">
+      <div style="flex: 1;background-color: white;padding: 10px;">
         <router-view />
       </div>
     </div>
